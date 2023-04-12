@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+    <img src="../img/dev.jpg" alt="moi" class="photo">
+    <a href="#presentation"><img src="../img/fleche-vers-le-bas.png" alt="fleche-vers-le-bas" class="fleche"></a>
+
+    <div class="hello">
+        <h1>Hi, I'm <span>Maxime</span><p>From France</p></h1>
+        <p>Web development student</p>
+    </div>
+
+        <nav class="nav" id="navbar">
+            <div class="logo">Max<span>!</span>me</div>
+            <div class="navlinks">
+                <ul>
+                    <li class="activ"><a href="#">Home</a></li>
+                    <li><a href="../mesprojets/myproject.html">Project</a></li>
+                    <li><a href="../cv/cv.html">CV</a></li>
+                    <li><a href="../entreprise/entreprise.html">Mon entreprise</a></li>
+                    <li><a href="../contactme/contact.html">Contact</a></li>
+                    <li><a href="../aboutme/aboutme.html">About Me</a></li>
+                    <li><a href="../settings/settings.html">Settings</a></li>
+                </ul>
+            </div>
+            <img src="../img/hamburger.png" alt="hambuger-menu" class="hamb-menu">
+            <img src="../img/x.png" alt="x-closemenu" class="x-menu">
+        </nav>
+
+        <header></header>
+
+        <div class="presentation" id="presentation">
+            <div class="pres">
+                <div class="presimg"><img src="../img/dev.jpg"></div>
+
+                <div class="title"><h1>Welcome in my portfolio !</h1></div>
+
+                <div class="descrip"><p>Vous êtes actuellement sur le port-folio d'un 
+                étudiant français de deuxième année en BTS SIO option SLAM.<br></p>
+                <p>Je suis très ravi que vous consultiez mon tout premier site internet 
+                écrit de A à Z de ma main ! Dans celui-ci vous pourrez retrouver 
+                plusieurs onglets comme "Home", là où vous vous trouvez actuellement ; 
+                "Project", qui répertorie tous les projets que j'ai réalisés avec 
+                differentes informations dessus ainsi que des informations sur mes 
+                projets en cours et à venir ; "CV" qui contient, comme son nom 
+                l'indique, mon Curriculum Vitae ; "About Me" contenant des informations 
+                supplémentaires sur moi ; "Contact" avec à l'intérieur mes differents 
+                contact avec des petits descriptif de ce que je propose à l'intérieur !
+                <br></p> <p>Voilà, maintenant que vous êtes informer sur mon site, je ne 
+                puis vous souhaitez que : "Bonne visite ! ".</p></div>
+            </div>
+        </div>
+
+        <span></span>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-col">
+                    <h1>Follow me</h1>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/maxime-saunot-336785224/" target="_blank"><img src="../img/logo/linkedIn.png"><p>LinkedIn</p></a>
+                        <a href="#"><img src="../img/logo/twitter.png"><p>Twitter</p></a>
+                        <a href="#"><img src="../img/logo/instagram.png"><p>Instagram</p></a>
+                        <a href="#"><img src="../img/logo/twitch.png"><p>Twitch</p></a>
+                    </div>
+                </div>
+        
+        
+                <div class="container">
+                    <h1>Contact Form</h1>   
+                <form action="/action_page.php">
+                    <div class="txt_field">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+                        <span></span>
+                        <label for="fname">First Name</label>
+                    </div>
+        
+                    <div class="txt_field">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                        <span></span>
+                        <label for="lname">Last Name</label>
+                    </div>
+        
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="">Select ...</option>
+                            <option value="France">France</option>
+                            <option value="Canada">Canada</option>
+                            <option value="usa">USA</option>
+                    </div>
+                    </select>
+        
+                    <div></div>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                    <input type="submit" value="Submit">
+                    <span id="machine"></span>
+                </form>
+                </div>
+            </div>
+        </footer>
+</body>
+
+    <script src="../script_java/nav-bar.js"></script>
+
+</html>

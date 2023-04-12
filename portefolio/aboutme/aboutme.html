@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../home/home.css">
+</head>
+<body>
+
+        <nav class="nav">
+            <a href="#" class="logo">M.SAUNOT</a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../mesprojets/myproject.html">Project</a></li>
+                    <li><a href="../cv/cv.html">CV</a></li>
+                    <li><a href="../entreprise/entreprise.html">Mon entreprise</a></li>
+                    <li><a href="../contacts/contact.html">Contact</a></li>
+                    <li class="activ"><a href="#">About Me</a></li>
+                    <li><a href="../settings/settings.html">Settings</a></li>
+                </ul>
+            </div>
+            <img src="../img/hamburger.png" alt="hambuger-menu" class="hamb-menu">
+        </nav>
+
+        <img src="../img/fleche-vers-le-bas.png" alt="fleche-vers-le-bas" class="fleche">
+        
+        <header></header>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-col">
+                    <h1>Follow me</h1>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/maxime-saunot-336785224/" target="_blank"><img src="../img/logo/linkedIn.png"><p>LinkedIn</p></a>
+                        <a href="#"><img src="../img/logo/twitter.png"><p>Twitter</p></a>
+                        <a href="#"><img src="../img/logo/instagram.png"><p>Instagram</p></a>
+                        <a href="#"><img src="../img/logo/twitch.png"><p>Twitch</p></a>
+                    </div>
+                </div>
+        
+        
+                <div class="container">
+                    <h1>Contact Form</h1>
+                <form action="/action_page.php">
+                    <div class="txt_field">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+                        <span></span>
+                        <label for="fname">First Name</label>
+                    </div>
+        
+                    <div class="txt_field">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                        <span></span>
+                        <label for="lname">Last Name</label>
+                    </div>
+        
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="">Select ...</option>
+                            <option value="France">France</option>
+                            <option value="Canada">Canada</option>
+                            <option value="usa">USA</option>
+                    </div>
+                    </select>
+        
+                    <div></div>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                    <input type="submit" value="Submit">
+                    <span id="machine"></span>
+                </form>
+                </div>
+            </div>
+        </footer>
+</body>
+
+    <script src="../script_java/nav-bar.js"></script>
+
+</html>

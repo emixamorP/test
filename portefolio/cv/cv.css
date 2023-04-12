@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scrollbar-color: dark;}
+body{
+    scrollbar-color: #03DAC6 rgb(220, 220, 220);}
+html{
+scroll-behavior: smooth;}
+
+/*-----------Tout ce qu'il y a si-dessous n'est que pour le header-----------*/
+header {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;}
+/*PROBLEME : nav trop grande*/
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 200000;}
+.nav a{
+    color: black;
+    font-size: 20px;}
+.nav .logo{
+    margin-left: 50px;
+    font-family: silkscreen;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: red;}
+.nav .logo span{
+    color: red;}
+.nav .navlinks ul{
+    margin-right: 50px;
+    display: flex;}
+.nav .navlinks ul li{
+    margin: 0 25px;}
+.nav .navlinks ul li.activ a{
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 0, 0, 0.5);
+    font-weight: bold;}
+.nav .hamb-menu {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 41px;
+    right: 30px;
+    width: 65px;}
+.nav .x-menu {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    width: 45px;}
+
+.fleche {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5%;
+    transition: 0.3s;}
+.fleche:hover {
+    transform: translate(-50%, -10%);}
+
+.photo{
+    position: absolute;
+    box-sizing: border-box;
+    width: 500px;
+    top: 50%;
+    left: 95%;
+    transform: translate(-85%, -50%);
+    clip-path:ellipse(33% 50%);}
+
+.hello{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    font-size: 20px;}
+.hello h1{
+    font-size: 50px;}
+.hello h1 span{
+    color: red;}
+.hello h1 p{
+    text-indent: 69px;}
+.hello p{
+    text-indent: 100px;}
+
+@media screen and (max-width: 1000px){
+    .nav {
+        padding: 0;
+    }
+    .nav .logo {
+        position: absolute;
+        margin: 0;
+        top: 40px;
+        left: 30px;
+    }
+    .nav .hamb-menu{
+        display: block;
+    }
+
+    .navlinks {
+        top: 0;
+        left: 0;
+        position: absolute;
+        backdrop-filter: blur(8px);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .navlinks.mobile-menu{
+        margin-left: 0;
+    }
+    .navlinks.mobile-menu ul{
+        margin: 0;
+    }
+    .navlinks ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .nav .navlinks ul li {
+        margin: 25% 0;
+    }
+    .nav .navlinks ul li a{
+        font-size: 40px;
+    }
+
+    .fleche{
+        width: 50px;}}
+@media screen and (max-width: 860px){
+    .photo{
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    }
+    .hello{
+        text-align: center;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+    }
+    .hello h1 p{
+        text-indent: 9px;
+    }
+    .hello p{
+        text-indent: 0px;
+    }}
+/*-----------Fin-----------*/
+
+/*-----------Tout ce qu'il y a ci-dessous n'est que pour la présentation-----------*/
+
+.presentation{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;}
+.pres{
+    position: relative;
+    height: 100vh;
+    width: 100%;}
+.presimg{
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translate(-8%, -50%);}
+.title{
+    position: absolute;
+    left: 50%;
+    top: 31%;
+    transform: translateY(-31%);}
+.title h1{
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: underline red;}
+.descrip{
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    transform: translateY(-59%);
+    width: 900px;
+    text-align: justify;
+    text-indent: 20px;}
+.descrip p{
+    font-size: 22px;}
+    
+/*@media screen and (max-width: 1820px){
+    .presimg{
+        height: 33%;
+        width: 33%;
+        left: 50%;
+        top: 11%;
+        transform: translate(-50%, -11%);        
+    }
+    .presimg img{
+        width: 100%;
+    }
+    
+    .title{
+        height: 33%;
+        width: 33%;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -55%);
+    }
+    .descrip{
+        height: 33%;
+        width: 33%;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -88%);
+    }}*/
+@media screen and (max-width: 1820px){
+    .descrip{left: 50%;
+    transform: translateX(-50%);}}
+/*-----------Fin-----------*/
+
+/*-----------Tout ce qu'il y a ci-dessous n'est que pour le footer-----------*/
+footer{
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-color: #24262b;}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 75vh;}
+
+/*-----------Me contacter-----------*/
+.container{
+    border: 1px solid blue;
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+    width: 700px;
+    height: 600px;}
+.container h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 35px;}
+.container h1::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    background-color: #e91e63;
+    height: 3px;
+    box-sizing: border-box;
+    width: 130px;}
+.container form{
+    padding: 0 40px;
+    box-sizing: border-box;}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #03DAC6;
+    transition: .5s;}
+.txt_field input:focus ~ label, .txt_field input:valid ~ label{
+    top: -5px;
+    color: #03DAC6;}
+.txt_field input:focus ~ span::before, .txt_field input:valid ~ span::before{
+    width: 100%;}
+#machine{
+    margin: 30px 0;}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #03DAC6;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;}
+input[type="submit"]:hover{
+    border-color: #06578d;
+    transition: .5s;}
+
+/*-----------Mes réseaux-----------*/
+.footer-col{
+    position: absolute;
+    height: 200px;
+    width: 520px;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);}
+.footer-col h1{
+    text-align: center;
+    font-size: 45px;
+    color: #03DAC6;}
+.footer-col h1::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 220px;
+    border-radius: 50px;
+    background-color: #e91e63;}
+.social-links{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);}
+.social-links a{
+    display: inline-block;
+    margin: 0 20px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: all 0.5s ease;
+    transition: 0.3s;}
+.social-links a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(12%);}
+.social-links a img{
+    position: relative;
+    width: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+.social-links p{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+        color: #03DAC6;
+    margin: 20px 0;}
+.social-links a:hover p{
+    display: block;}
+    
+@media(max-widht: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }}
+@media(max-widht: 574px){
+    .footer-col{
+        width: 100%;
+    }}
+/*-----------Fin-----------*/
+
+#cv{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scrollbar-color: dark;}
+body{
+    scrollbar-color: #03DAC6 white;}
+html{
+    scroll-behavior: smooth;}
+
+footer{
+width: 100%;
+height: 75vh;
+background-size: cover;
+background-color: #24262b;}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+}
+
+.footer-col{
+    position: absolute;
+    height: 200px;
+    width: 30%;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);}
+.footer-col h1{
+    text-align: center;
+    font-size: 45px;
+    color: #03DAC6;}
+.footer-col h1::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 220px;
+    border-radius: 50px;
+    background-color: #e91e63;}
+.social-links{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);}
+.social-links a{
+    display: inline-block;
+    margin: 0 20px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: all 0.5s ease;
+    transition: 0.3s;}
+.social-links a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(12%);}
+.social-links a img{
+    position: relative;
+    width: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+.social-links p{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #03DAC6;
+    margin: 20px 0;}
+.social-links a:hover p{
+    display: block;}
+
+/*-----------Me contacter-----------*/
+.container{
+    border: #03DAC6 1px solid;
+    position: absolute;
+    height: auto;
+    width: 60%;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);}
+.container h1{
+    text-align: center;
+    font-size: 45px;
+    color: #03DAC6;}
+.container h1::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 245px;
+    border-radius: 50px;
+    background-color: #e91e63;
+}
+
+
+.log form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    width: 25%;
+}
+
+.txt_field{
+    left: 20px;
+}
+.txt_field input{
+    border: #03DAC6 1px solid;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;  
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #03DAC6;
+    transition: .5s;}
+.txt_field input:focus ~ label, .txt_field input:valid ~ label{
+    top: -5px;
+    color: #03DAC6;}
+.txt_field input:focus ~ span::before, .txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.subject{
+    border: ;
+    width: 65%;
+}
+input[type="submit"]{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    border: 1px solid;
+    background: #03dac6;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;}
+input[type="submit"]:hover{
+    border-color: #03DAC6;
+    transition: .5s;}
+.machine{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;}
